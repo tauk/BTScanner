@@ -45,12 +45,6 @@ public class MainActivity extends AppCompatActivity {
             //The results of this scan will come as Intents from the Android System
             boolean scanStarted = bluetoothAdapter.startDiscovery();
 
-            //textView.setText(textView.getText() + "\n Did scan start:" +scanStarted);
-            try {
-                Thread.sleep(20000); //delay for 12 second to give adapter time to do scan
-            } catch (Exception exception) {
-                //textView.setText(textView.getText() + "\n Did scan start:" +scanStarted);
-            }
             textView.setText(textView.getText() + "\n Did scan start:" +scanStarted);
             textView.setText(textView.getText() + "\n Discovering:" +bluetoothAdapter.isDiscovering());
 
